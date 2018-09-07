@@ -1,0 +1,51 @@
+label{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+input{
+  display: block;
+  font-size: 0.75rem;
+  border-radius: 0;
+  border: 1px solid #888888;
+  background-color: white;
+  width: 100%;
+}
+input + label{
+  margin-top: 0.625rem;
+}
+input:focus{
+  border-color: #34dd99;
+  outline: 0;
+}
+input:disabled{
+  opacity: 0.3;
+}
+input::placeholder{
+  font-style: italic;
+}
+input:required{
+  background-color: #ffeecc;
+}
+input:valid{
+  border-color: green;
+}
+input:invalid{
+  border-color: red;
+}
+[type="radio"],
+[type="checkbox"]{
+  width: 1.25rem;
+}
+[type="range"]{
+  border-width: 0;
+}
+.thing{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: black;
+  border-radius: 50%;
+}
