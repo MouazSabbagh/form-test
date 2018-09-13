@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -40,8 +41,40 @@
     <input id="input-checkbox-2" type="checkbox">
     <label for="input-range">"input-range"</label>
     <input id="input-range" type="range" min="0" max="1" step="0.01" name="amount">
-    <div class="thing"></div>
+    <label>
+      <input type="checkbox"> check this box
+    </label>
+    <label for="textarea">textarea</label>
+    <textarea id="textarea" placeholder="why you dont write me?"></textarea>
+    <label for="select">select</label>
+    <select name="number" id="select">
+      <option value="" selected>choose a value</option>
+      <option value="0">Zero</option>
+      <option value="1">one</option>
+      <option value="2">two</option>
+    </select>
 
+
+    <label for="select-2">select[disabaled]</label>
+    <select name="number" id="select-2" disabled>
+      <option value="" selected>choose a value</option>
+      <option value="0">Zero</option>
+      <option value="1">one</option>
+      <option value="2">two</option>
+
+    </select>
+
+
+    <label for="input-text">input[list]</label>
+    <input type="text" list="people" id="input text">
+    <datalist id="people">
+      <option value="" selected>choose a value</option>
+      <option value="moaz"></option>
+      <option value="Halit"></option>
+      <option value="Stephen"></option>
+    </datalist>
+
+    
 
   </form>
   <script src="js/forms.js"></script>
